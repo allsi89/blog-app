@@ -1,5 +1,5 @@
 <template>
-  <div class="app-post-list"></div>
+  <div>PostList works</div>
 </template>
 
 <script>

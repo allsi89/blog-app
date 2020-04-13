@@ -1,10 +1,10 @@
 <template>
-  <div>Details works</div>
+  <div>Create works</div>
 </template>
 
 <script>
 export default {
-  name: "Details",
+  name: "CreatePost",
   data: function() {
     return {};
   }

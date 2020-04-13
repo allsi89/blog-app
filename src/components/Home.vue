@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div>Home View works</div>
 </template>
 
 <script>
