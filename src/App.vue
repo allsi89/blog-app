@@ -1,21 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-    <PostList />
+    <v-app>
+      <!-- <v-navigation-drawer app> -->
+        <!-- -->
+      <!-- </v-navigation-drawer> -->
+
+      <v-app-bar app>
+        <!-- -->
+      </v-app-bar>
+      <!-- Sizes your content based upon application components -->
+      <v-content class="custom-styling">
+        <!-- Provides the application the proper gutter -->
+        <v-container fluid class="center">
+          <!-- If using vue-router -->
+          <router-view></router-view>
+        </v-container>
+      </v-content>
+
+      <v-footer app>
+        <!-- -->
+      </v-footer>
+    </v-app>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-import PostList from "./components/PostList.vue";
-
 export default {
   name: "App",
-  components: {
-    HelloWorld,
-    PostList
-  }
+  components: {}
 };
 </script>
 
@@ -27,5 +39,13 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.center{
+  display: flex;
+ 
+  justify-content: center;
+}
+.custom-styling{
+   background-color: rgb(182, 233, 216);
 }
 </style>
